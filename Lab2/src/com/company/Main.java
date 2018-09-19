@@ -19,7 +19,7 @@ public class Main {
         System.out.println(small.toString());
 
         Analyzer an = new Analyzer();
-        an.run();*/
+        an.run();
         int[] a = new int[5];
 
         for (int i = 0; i<a.length; i++)
@@ -28,7 +28,11 @@ public class Main {
         int [] ar = rep.Repeat(a);
         for (int i =0; i<ar.length; i++){
             System.out.print(ar[i]+ " ");
-        }
+        }*/
+
+        Time t = new Time ( 23, 56, 5);
+        System.out.println(t.toStandard());
+        System.out.println(t.toUniversal());
 
 
     }
