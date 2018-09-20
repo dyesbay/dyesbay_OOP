@@ -1,3 +1,6 @@
+package com.company;
+
+
 public class Words {
     public String inWords(int a){
         switch (a) {

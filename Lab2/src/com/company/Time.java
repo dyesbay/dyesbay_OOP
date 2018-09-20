@@ -5,9 +5,9 @@ public class Time {
     private int minute;
     private int second;
     public Time (int hour, int minute, int second){
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
+        this.hour = hour%24;
+        this.minute = minute%60;
+        this.second = second%60;
     }
     public int getHour () {
         return hour;
@@ -58,7 +58,7 @@ public class Time {
         String s = new String();
         String a = "AM";
         int h=hour;
-        if (hour >=12){
+        if (hour >12){
             a = "PM";
             h-=12;
         }
