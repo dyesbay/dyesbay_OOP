@@ -2,20 +2,18 @@ public class Animal {
     protected String name;
     protected int age;
     protected double weight;
-    protected String gender;
+    protected Gender gender;
     public Animal (){
         age=0;
         weight=0;
         name="unknown";
-        gender="n/a";
+        gender=null;
     }
-    public Animal (String name, int age, double weight, boolean ifMale){
+    public Animal (String name, int age, double weight, Gender gender){
         this.name = name;
         this.age = age;
         this.weight = weight;
-        if (ifMale)
-            gender="male";
-        else gender = "female";
+        this.gender=gender;
     }
     public void showInfo(){
         String s = "This animal's name is " + name + ". It is " + age + " years old and it weights " + weight + " kilos.";
